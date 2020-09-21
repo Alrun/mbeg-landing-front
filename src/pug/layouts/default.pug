@@ -1,0 +1,30 @@
+doctype html
+
+block page-vars
+
+include ../mixins/mixins
+
+html(lang= PROJECT_LOCALE)
+    head
+        block head
+            include ../head
+            +meta(meta)
+
+    body.page
+
+        .wrapper
+            block header
+                header.header
+                    nav.navbar.navbar-expand-lg.navbar-light.bg-light
+                        .container
+
+                            include ../../components/header
+
+                            .collapse.navbar-collapse#navbarToggle
+                                +navbar(currentUrl)
+
+            main.main
+                block main
+
+            block footer
+                include ../../components/footer

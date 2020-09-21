@@ -1,0 +1,5 @@
+mixin card(title, url, img, alt)
+    a.card(href= url)
+        img.card-img-top(src= img, alt= alt, style="object-fit: cover; height: 200px")
+        .card-body
+            h5.card-title= title

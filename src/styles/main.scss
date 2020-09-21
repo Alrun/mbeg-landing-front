@@ -1,0 +1,18 @@
+// Vendor
+@import '~bootstrap/scss/bootstrap';
+@import '~swiper/swiper-bundle';
+
+// Variables
+@import 'variables';
+
+// Mixins
+@import 'mixins';
+
+// Fonts
+@import 'fonts';
+
+// Base
+@import 'base/base';
+
+// Components
+@import '../components/work-slider/work-slider';

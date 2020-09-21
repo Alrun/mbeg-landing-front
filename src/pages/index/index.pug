@@ -1,0 +1,20 @@
+extends ../../pug/layouts/default
+
+block page-vars
+    -
+        var meta = {
+            title: 'Главная – ' + PROJECT_NAME,
+            description: 'TT',
+            keywords: '',
+            type: 'website',
+            url: '',
+            image: '/public/images/test.jpg'
+        }
+
+block main
+    .container
+        h1 Test
+
+        include ../../components/work-slider/work-slider
+        img(src=require('../../assets/images/main-bg.jpg').default, alt="")
+
