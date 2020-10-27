@@ -1,0 +1,29 @@
+html, body {
+    height: 100%;
+    //overflow-x: hidden;
+}
+
+body {
+    font-family: $font;
+    background-color: #1f1f1f;
+    color: $text-color;
+    min-width: 320px;
+    //overflow-x: hidden;
+    //background-image: url(../img/fon.png);
+}
+
+.wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: $main;
+}

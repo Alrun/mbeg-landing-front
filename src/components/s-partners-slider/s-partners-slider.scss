@@ -1,0 +1,17 @@
+.partners-slider {
+    position: relative;
+    padding: 1rem 4rem;
+
+    &__item {
+        text-align: center;
+    }
+
+    &__img {
+        max-width: 100px;
+        max-height: 60px;
+    }
+
+    .swiper-wrapper {
+        align-items: center;
+    }
+}

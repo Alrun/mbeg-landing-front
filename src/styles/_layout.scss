@@ -1,0 +1,137 @@
+div {
+    //outline: 1px solid pink;
+}
+
+
+label {
+    width: 100%;
+}
+
+input {
+}
+
+.form-control {
+    border: 1px solid $main;
+    border-radius: 0;
+    background-color: transparent;
+
+    &:focus {
+        color: #ccc;
+        background-color: transparent;
+        border: 1px solid $main;
+        outline: 0;
+        box-shadow: 0 0 1rem .5rem rgba($main,.25);
+    }
+}
+
+.bb-green {
+    border-bottom: 1px solid $main;
+}
+
+.bg-black {
+    background-color: $second-light;
+}
+
+[type=file] {
+    position: absolute;
+    visibility: hidden;
+    font-size: 0;
+}
+
+.img-link {
+
+    &__img {
+        width: 40px;
+        height: 40px;
+        margin-right: $grid-gutter-width/2;
+    }
+
+    &__text {
+
+    }
+
+    &_youtube {
+
+        .img-link__text {
+            text-transform: uppercase;
+            color: $main;
+            border-bottom: 1px solid transparent;
+            transition: border-color .18s;
+        }
+
+        &:hover {
+            .img-link__text {
+                border-bottom-color: $main;
+            }
+        }
+
+    }
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.btn_outline {
+    border-color: $main;
+    color: $main;
+
+    &:hover {
+        background-color: darken($main, 5);
+        color: #fff;
+    }
+}
+
+.text-main {
+    color: $main;
+}
+
+.map {
+    display: inline-flex;
+
+    &__img {
+        width: 16px;
+        margin-right: .5rem;
+    }
+
+    &__text {
+        color: #ccc;
+        transition: .18s;
+    }
+
+    &:hover {
+        .map__text {
+            color: $main;
+        }
+    }
+}
+
+.modal-content {
+    background-color: #444;
+}
+
+.modal-header {
+    border-bottom: 0;
+}
+
+.close {
+    display: inline-block;
+    font-weight: 500;
+    line-height: 0.5em;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: initial;
+    border: 0;
+    padding: 0 .5rem .5rem;
+    font-size: 3rem;
+
+    &:focus {
+        outline: 0;
+    }
+}

@@ -1,5 +1,10 @@
-mixin card(title, url, img, alt)
-    a.card(href= url)
-        img.card-img-top(src= img, alt= alt, style="object-fit: cover; height: 200px")
-        .card-body
-            h5.card-title= title
+mixin card(url, title, desc, alt, index)
+
+    //-a.card(href="#")
+    .card
+        picture.card__img-wrap
+            source(data-srcset= require('../../assets/images/portfolio-montazh-'+ index +'.jpg').default + " 2x, " + require('../../assets/images/portfolio-montazh-'+ index +'.jpg').default + " 1x")
+            img.swiper-lazy.card__img(data-src= require('../../assets/images/portfolio-montazh-'+ index +'.jpg').default, alt= alt)
+        .card__body
+            .card__title= title
+            .card__desc= desc

@@ -1,0 +1,16 @@
+.cooperation {
+    background: $second-light;
+    padding: 3rem 0;
+    overflow: hidden;
+
+    &__img {
+        width: 60px;
+        height: 60px;
+    }
+
+    &__text {
+        text-transform: uppercase;
+        margin: 1rem auto;
+        max-width: 250px;
+    }
+}

@@ -1,0 +1,55 @@
+header.header(style="background-image: url(" + require('../../assets/images/main-bg.jpg').default + ");")
+    .header__top
+        .container
+            .row.align-items-center
+                .col.d-none.d-md-flex
+                    a.contact.py-1(href="tel:+79218555166")
+                        img.contact__icon(src=require('../../assets/icons/phone.svg').default, alt="")
+                        .contact__text +7 (921) 855 51 66
+                    a.contact.py-1(href="mailto:em@mbeg.ru")
+                        img.contact__icon(src=require('../../assets/icons/mail.svg').default, alt="")
+                        .contact__text em@mbeg.ru
+
+                .col-auto.d-md-none.py-1.pr-0
+                    .company-title МБ Инжиниринг групп
+
+                .social.col-auto.ml-auto.py-1
+                    a.social__link(href="#", target="_blank", rel="noopener noreferrer")
+                        img.social__icon(src=require('../../assets/icons/vk.svg').default, alt="")
+                    a.social__link(href="#", target="_blank", rel="noopener noreferrer")
+                        img.social__icon(src=require('../../assets/icons/instagram.svg').default, alt="")
+                    a.social__link(href="#", target="_blank", rel="noopener noreferrer")
+                        img.social__icon(src=require('../../assets/icons/facebook.svg').default, alt="")
+
+    .header__bottom
+        .container
+            .row
+                .col.d-none.d-md-block
+                    .logo
+                        a.logo__link(href="/")
+                            img.logo__img(src=require('../../assets/icons/logo.svg').default, alt="")
+                        .logo__desc
+                            .logo__text Разработка проектной документации
+                            .logo__text Строительно-монтажные работы
+                            .logo__text Поставка инженерного оборудования
+
+                .col-12.d-md-none.mb-4
+                    .row
+                        .col-auto
+                            a.contact__link.py-1(href="tel:+78129375977")
+                                img.contact__icon(src=require('../../assets/icons/phone.svg').default, alt="")
+                                .contact__text +7 (812) 937 59 77
+                        .col-auto
+                            a.contact__link.py-1(href="mailto:info@mbeg.ru")
+                                img.contact__icon(src=require('../../assets/icons/mail.svg').default, alt="")
+                                .contact__text info@mbeg.ru
+
+                .col-auto.text-md-right
+                    .mb-3
+                        a.btn.btn_outline.text-white.text-uppercase(href="#") Официальный сайт mbeg.ru
+                    .mb-3
+                        a.img-link.img-link_youtube(href="#")
+                            img.img-link__img(src=require('../../assets/icons/youtube.svg').default, alt="")
+                            span.img-link__text Ютуб канал МБИ
+
+            include ../s-solutions/s-solutions

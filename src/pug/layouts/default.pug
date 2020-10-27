@@ -14,17 +14,15 @@ html(lang= PROJECT_LOCALE)
 
         .wrapper
             block header
-                header.header
-                    nav.navbar.navbar-expand-lg.navbar-light.bg-light
-                        .container
+                include ../../components/header/header
 
-                            include ../../components/header
-
-                            .collapse.navbar-collapse#navbarToggle
-                                +navbar(currentUrl)
 
             main.main
                 block main
 
             block footer
-                include ../../components/footer
+                include ../../components/footer/footer
+
+            block modals
+
+            block scripts

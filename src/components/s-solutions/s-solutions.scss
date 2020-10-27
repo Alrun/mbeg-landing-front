@@ -1,0 +1,35 @@
+.solutions {
+
+    &__main-text {
+        text-transform: uppercase;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        text-align: center;
+
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__item {
+        //transform: translate3d(-100px,0,0);
+    }
+
+    &__img {
+        width: 22px;
+
+        @include media-breakpoint-up(md) {
+            width: 45px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            width: 60px;
+        }
+    }
+
+    &__text {
+        @include media-breakpoint-up(lg) {
+            font-size: $font-size-md;
+        }
+    }
+}

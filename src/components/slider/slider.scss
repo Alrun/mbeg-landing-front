@@ -1,0 +1,33 @@
+.swiper-pagination-bullet {
+    border-radius: 0;
+    background: #777;
+    width: 16px;
+    height: 6px;
+    margin: 4px;
+    opacity: 1;
+    transition: background .18s;
+
+    &:hover {
+        background: #999;
+    }
+
+    &.swiper-pagination-bullet-active {
+        background: $main;
+    }
+}
+
+.swiper-lazy-preloader {
+    border-color: $main;
+    border-top: 4px solid transparent;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    color: #ccc;
+    transition: color .18s;
+}
+
+.swiper-button-prev:hover::after,
+.swiper-button-next:hover::after {
+    color: #fff;
+}

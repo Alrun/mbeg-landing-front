@@ -1,0 +1,133 @@
+.form {
+
+    &__wrapper {
+        position: relative;
+        background-color: $second-light;
+        margin-top: -2.5rem;
+        padding: 2rem;
+        border-bottom: 1px solid $main;
+
+
+        @include media-breakpoint-up(sm) {
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+
+        @include media-breakpoint-up(md) {
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            margin-left: -2.5rem;
+            margin-right: -2.5rem;
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        text-transform: uppercase;
+        font-style: italic;
+    }
+
+    &__item {
+        display: block;
+        position: relative;
+        margin-bottom: 2rem;
+        height: 40px;
+    }
+
+    &__label {
+        position: absolute;
+        left: 10px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        line-height: 1rem;
+        height: 1.2rem;
+        //top: 0.7em;
+        //z-index: 2;
+        //overflow: hidden;
+        //max-width: 90%;
+        //font-size: 17px;
+        //line-height: 24px;
+        //white-space: nowrap;
+        //text-overflow: ellipsis;
+        color: #888;
+        transition: 0.12s ease-out;
+    }
+
+    &__item.is-filled &__label,
+    &__item .form-control:focus + &__label {
+        //left: 15px;
+        top: -3.7rem;
+        font-size: 13px;
+        //background-color: #fff;
+        //width: 100%;
+        //margin-left: -14px;
+        //padding-left: 15px;
+        //margin-top: 1px;
+        //line-height: 22px;
+    }
+
+    &__personal-data-toggle {
+        color: #999;
+        border-bottom: 1px dashed;
+    }
+
+    &__btn-submit {
+        background-color: darken($main, 10);
+        width: 100%;
+        text-transform: uppercase;
+        color: #fff;
+
+        &:hover {
+            color: #fff;
+            background-color: darken($main, 5);
+        }
+    }
+
+    .wpcf7-not-valid ~ .wpcf7-not-valid-tip {
+        color: red;
+
+    }
+
+    .wpcf7-not-valid-tip {
+        position: absolute;
+        font-size: $font-size-sm;
+        top: 100%;
+        left: 0;
+        right: 0;
+        line-height: 1;
+    }
+
+    .invalid .wpcf7-response-output {
+        color: red;
+    }
+
+}
+
+.input-file {
+
+
+    &__label {
+        color: #ccc;
+        display: flex;
+    }
+
+    &__icon {
+        margin-right: .75rem;
+    }
+}

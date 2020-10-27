@@ -1,0 +1,54 @@
+.advantages {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    overflow: hidden;
+
+    &__item-wrap {
+        background: $second-light;
+        border-bottom: 1px solid $main;
+        padding: 2rem;
+    }
+
+    &__img {
+        display: block;
+        height: 60px;
+        width: 60px;
+        margin: auto;
+
+        @include media-breakpoint-up(xl) {
+            height: 80px;
+            width: 80px;
+        }
+    }
+
+    &__text {
+        font-size: $font-size-lg;
+
+        @include media-breakpoint-up(md) {
+            text-align: center;
+        }
+
+        @include media-breakpoint-up(xl) {
+            text-align: left;
+        }
+    }
+
+    &__item {
+
+
+        @include media-breakpoint-up(xl) {
+
+            &:nth-child(2n+1) {
+                .advantages__img-wrap {
+                    order: 2
+                }
+
+                .advantages__text {
+                    text-align: right;
+                }
+            }
+
+
+        }
+    }
+}

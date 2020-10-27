@@ -120,12 +120,13 @@ module.exports = (env, argv) => {
                 }, {
                     test: /\.(png|jpg?g|gif|svg)$/i,
                     use: {
-                        loader: 'url-loader',
+                        loader: 'file-loader',
+                        // loader: 'url-loader',
                         options: {
                             name: `${ PATHS.output.images }[name].[ext]`,
-                            // publicPath: 'images/',
-                            // outputPath: 'images/',
-                            limit: 8192
+                        //     // publicPath: 'images/',
+                        //     // outputPath: 'images/',
+                        //     limit: 8192
                         }
                     }
                 }, {

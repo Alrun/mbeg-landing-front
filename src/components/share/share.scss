@@ -1,0 +1,26 @@
+.share {
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+        text-align: left;
+    }
+
+    .ya-share2__container.ya-share2__container_color-scheme_blackwhite .ya-share2__badge,
+    .ya-share2__container.ya-share2__container_color-scheme_blackwhite .ya-share2__mobile-popup-badge {
+        background-color: transparent;
+    }
+
+    .ya-share2__container_size_m .ya-share2__badge .ya-share2__icon {
+        font-size: 2rem;
+        height: 1em;
+        width: 1em;
+        background-size: 1em 1em;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+
+

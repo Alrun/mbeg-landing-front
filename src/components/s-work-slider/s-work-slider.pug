@@ -1,0 +1,46 @@
+-
+    var data = [
+        {
+            url: '#',
+            title: 'Офисное здание «Бородино Плаза» г.Москва',
+            desc: 'Монтаж',
+            alt: 'Бородино Плаза'
+        },
+        {
+            url: '#',
+            title: 'ТЦ «Атлантик-Сити» г.Санкт-Петербург',
+            desc: 'Монтаж',
+            alt: 'Монтаж электроосвещения и слаботочных систем в торговом центре «Атлантик-Сити» г.Санкт-Петербург'
+        },
+        {
+            url: '#',
+            title: 'Малоэтажный жилой комплекс Ленинградская обл.',
+            desc: 'Проектирование',
+            alt: 'Разработка рабочей документации для Малоэтажного жилого комплекса в Ленинградская обл.'
+        },
+        {
+            url: '#',
+            title: 'Жилой дом п.Солнечное Ленинградская обл.',
+            desc: 'Монтаж',
+            alt: 'Монтаж инженерных систем индивидуального жилого дома п.Солнечное Ленинградская обл.'
+        }
+    ]
+
+section.work-slider
+    .container
+        h2.text-center.text-uppercase.mb-5(data-aos="fade-up", data-aos-delay="250") Выполненные работы
+
+        .work-slider__slider.js-work-slider(data-speed="400")
+            .swiper-container
+                .swiper-wrapper
+
+                    each item, index in data
+                        .work-slider__item.swiper-slide.preview-slider__item
+                            +card(item.url, item.title, item.desc, item.alt, index+1)
+
+                            .work-slider__preloader.swiper-lazy-preloader
+
+            .work-slider__pagination.swiper-pagination
+
+            .work-slider__arrow.work-slider__arrow_left.swiper-button-prev
+            .work-slider__arrow.work-slider__arrow_right.swiper-button-next

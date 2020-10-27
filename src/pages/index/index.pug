@@ -12,9 +12,14 @@ block page-vars
         }
 
 block main
-    .container
-        h1 Test
+    include ../../components/s-form/s-form
+    include ../../components/s-work-slider/s-work-slider
+    include ../../components/s-cooperation/s-cooperation
+    include ../../components/s-advantages/s-advantages
 
-        include ../../components/work-slider/work-slider
-        img(src=require('../../assets/images/main-bg.jpg').default, alt="")
+block modals
+    include ../../components/modal-map/modal-map
+    include ../../components/modal-personal-data/modal-personal-data
 
+block scripts
+    script(src="https://yastatic.net/share2/share.js")

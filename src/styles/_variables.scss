@@ -1,0 +1,26 @@
+// Font
+//$sans-serif: Tahoma, Verdana, Arial, sans-serif;
+//$serif: serif;
+$font: 'Exo 2', $font-family-sans-serif;
+
+$font-weight-base: $font-weight-light;
+$btn-font-weight: 500;
+
+$font-size-md: 1.125rem;
+
+$line-height-base: 1.25;
+$line-height-sm: 1;
+$line-height-lg: 1.75;
+
+// Variables
+$main: #47b900;
+
+$second: #000000;
+$second-light: lighten($second, 5%);
+
+$third: #fff;
+$third-dark: darken($third, 15%);
+
+$text-color: #d9d9d9;
+
+//$headings-font-weight: 600;

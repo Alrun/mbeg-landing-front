@@ -1,0 +1,40 @@
+footer.footer
+    .container
+
+        .row
+            .col-auto.pr-0
+                .footer__logo
+                    .logo
+                        a.logo__link(href="#")
+                            img.logo__img(src=require('../../assets/icons/logo.svg').default, alt="")
+
+            .col.mb-5
+                .h3.text-uppercase Адрес
+                address.address
+
+                    .mb-2 г.Санкт-Петербург, ул.Якорная, д.13, литер А, офис 311.
+
+                    //-<button type="button" class="btn btn-primary">
+                        Launch demo modal
+                        </button>
+
+                    .mb-2
+                        a.map(href="#", data-toggle="modal" data-target="#modalMap")
+                            img.map__img(src=require('../../assets/icons/pin.svg').default, alt="")
+                            span.map__text Карта
+                    .mb-2
+                        a.text-white(href="tel:+79218555166") Тел:
+                            span.text-main.ml-2 +7 (921) 855 51 66
+                    .mb-2
+                        a.text-white(href="mailto:em@mbeg.ru") E-mail:
+                            span.text-main.ml-2 em@mbeg.ru
+
+            .col-12.col-md-auto
+                .h3.text-center.text-md-left.mb-3.text-uppercase Поделиться
+
+                include ../share/share
+
+        .h3.text-center.mt-3.mb-4.text-uppercase Наши партнеры
+        include ../s-partners-slider/s-patners-slider
+
+    .footer__bottom ©2017-2020 МБ Инжиниринг Групп
