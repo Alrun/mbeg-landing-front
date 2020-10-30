@@ -37,7 +37,7 @@ label {
 
 
 input:-webkit-autofill {
-    -webkit-box-shadow: inset 0 0 0 100px $second !important;
+    -webkit-box-shadow: inset 0 0 0 100px $second-light !important;
     -webkit-text-fill-color: darken($text-color, 25) !important;
 }
 
