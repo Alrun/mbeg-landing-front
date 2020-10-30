@@ -1,11 +1,11 @@
 .modal.fade#modalMap(tabindex="-1", aria-labelledby="modalMap", aria-hidden="true")
-    .modal-dialog
-        .modal-content
+    .modal-dialog.modal-dialog-centered
+        .modal-content.p-0
             .modal-header
-                h5.modal-title Мы на карте
+                .h5.modal-title Мы на карте
                 button.close(type="button", data-dismiss="modal", aria-label="Close")
                     span(aria-hidden="true") &times;
 
-            div.modal-body
+            .modal-body.pt-1
                 div
                     iframe.w-100.contacts-map__iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.3446016505745!2d30.432206251564892!3d59.94301688178884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631f855b811b5%3A0xbe2730b98941f0ee!2z0K_QutC-0YDQvdCw0Y8g0YPQuy4sIDEzLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTk1MjQ4!5e0!3m2!1sru!2sru!4v1492974964892", width="600", height="450", style="border:0", allowfullscreen)

@@ -15,9 +15,9 @@
         width: 60px;
         margin: auto;
 
-        @include media-breakpoint-up(xl) {
-            height: 80px;
-            width: 80px;
+        @include media-breakpoint-up(lg) {
+            height: 90px;
+            width: 90px;
         }
     }
 

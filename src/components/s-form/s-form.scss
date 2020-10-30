@@ -101,7 +101,6 @@
 
     .wpcf7-not-valid ~ .wpcf7-not-valid-tip {
         color: red;
-
     }
 
     .wpcf7-not-valid-tip {
@@ -113,21 +112,118 @@
         line-height: 1;
     }
 
+    .wpcf7-response-output {
+        border: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
     .invalid .wpcf7-response-output {
         color: red;
     }
 
+    [type=submit] {
+        position: relative;
+
+        & + .ajax-loader {
+            position: absolute;
+            background-image: none;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: -125px;
+            margin: auto;
+            width: 18px;
+            height: 18px;
+            transform-origin: 50%;
+            animation: preloader-spin 1s infinite linear;
+            box-sizing: border-box;
+            border: 3px solid #fff;
+            border-radius: 50%;
+            border-top-color: transparent;
+
+            @keyframes preloader-spin {
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+        }
+    }
 }
 
 .input-file {
 
-
     &__label {
         color: #ccc;
         display: flex;
+        cursor: pointer;
+
+        &:hover {
+            .input-file__icon {
+                background: lighten($main, 5);
+            }
+        }
     }
 
     &__icon {
-        margin-right: .75rem;
+        position: relative;
+        margin-right: 15px;
+        margin-top: -2px;
+        width: 25px;
+        height: 25px;
+        background: $main;
+        border-radius: 50%;
+        transition: box-shadow, background .18s;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            background: $second;
+        }
+
+        &::before {
+            width: 4px;
+            height: 14px;
+        }
+
+        &::after {
+            width: 14px;
+            height: 4px;
+        }
+    }
+
+    &__input {
+
+        &:focus {
+            .input-file__icon {
+                box-shadow: $shadow-lg;
+            }
+        }
+    }
+
+    &__desc {
+        width: calc(100% - 40px);
+    }
+
+    &__selected {
+        margin-top: 0.3rem;
+        font-size: $font-size-sm;
+        color: $main;
+
+        & div {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        & span {
+            font-size: $font-size-base/1.5;
+        }
     }
 }

@@ -1,12 +1,12 @@
 section.form
     .container
-        .form__wrapper
+        .form__wrapper.wpcf7
 
             .mb-5
                 .form__title.h3 поиск оптимального финансового и технического решения
                 .form__title.h3 получите коммерческое предложение в течении 24 часов
 
-            form.wpcf7-form.invalid(action="#", method="post", enctype="multipart/form-data", novalidate="novalidate")
+            form.wpcf7-form(action="#", method="post", enctype="multipart/form-data", novalidate="novalidate")
                 div(style="display: none;")
                     input(type="hidden", name="_wpcf7", value="5")
                     input(type="hidden", name="_wpcf7_version", value="5.2.2")
@@ -36,8 +36,10 @@ section.form
                         span.form__item.js-form-input.input-file.wpcf7-form-control-wrap.file-297
                             input#upload.input-file__input.wpcf7-form-control.wpcf7-file.form-control.wpcf7-not-valid(type="file", name="file-297", size="40", accept=".png,.jpg" aria-invalid="true")
                             label.input-file__label(for="upload")
-                                img.input-file__icon(src="https://www.vippng.com/png/full/43-436254_plus-green-plus-icon-png.png", width="20", height="20")
-                                span.input-file__text Прикрепить файл для расчета
+                                .input-file__icon
+                                .input-file__desc
+                                    .input-file__text Прикрепить файл для расчета
+                                    .input-file__selected
                             //-span.wpcf7-not-valid-tip(role="alert", aria-hidden="true") При загрузке файла произошла ошибка.
 
                     .col-lg-3.order-lg-3
@@ -48,4 +50,4 @@ section.form
                     .col-lg-9.order-lg-5
                         span.form__item Нажимая кнопку, вы даете согласие на обработку <a class="form__personal-data-toggle" href="#" data-toggle="modal" data-target="#modalPersonalData">персональных данных</a>
 
-                //-div.wpcf7-response-output(role="alert", aria-hidden="true", style="") Одно или несколько полей содержат ошибочные данные. Пожалуйста, проверьте их и попробуйте ещё раз.
+                //-.wpcf7-response-output(role="alert", aria-hidden="true", style="") Одно или несколько полей содержат ошибочные данные. Пожалуйста, проверьте их и попробуйте ещё раз.
