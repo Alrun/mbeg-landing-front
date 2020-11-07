@@ -39,17 +39,23 @@
         margin-right: $grid-gutter-width/2;
     }
 
-    &__text {
-
-    }
-
     &_youtube {
+        text-align: left;
+        display: inline-block;
+
+        .img-link__img {
+            display: block;
+            width: 120px;
+            margin-bottom: -8px;
+        }
 
         .img-link__text {
             text-transform: uppercase;
             color: $main;
             border-bottom: 1px solid transparent;
             transition: border-color .18s;
+            margin-left: 44px;
+            font-size: 13px;
         }
 
         &:hover {
